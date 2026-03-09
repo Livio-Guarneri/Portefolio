@@ -1,0 +1,147 @@
+body {
+    margin: 25px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(235,235,235) ;
+    padding: 20px 0;
+}
+section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+header {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px
+}
+h1 {
+    text-align: center;
+}
+h2, h3 {
+    text-align: center;
+}
+h2 {
+    margin-bottom: 30px;
+}
+h3 {
+    margin-top: 20px;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+.navbar a:hover {
+    color: orange;
+}
+.description {
+    font-size: 20px;
+
+}
+.btn1 {
+    font-size: 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+}
+.btn1 a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial,sans-serif;
+}
+.btn1:hover {
+    background-color: darkmagenta;
+}
+
+.a-propos p {
+    font-size: 20px;
+}
+.projet {
+    font-size: 20px;
+}
+.projet img {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+}
+.projet p {
+    font-size: 20px;
+}
+
+.btn2 {
+    font-size: 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+}
+.btn2 a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial,sans-serif;
+}
+.btn2:hover {
+    background-color: darkmagenta;
+}
+.btn-container {
+    display: flex;
+    gap: 2rem;
+    margin: 10px;
+    
+}
+.offre p {
+    font-size: 20px;
+}
+.offre-1, .offre-2, .offre-3 {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    width: 450px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+}
+.contact p {
+    font-size: 20px;
+}
+footer {
+    height: 260px;
+    background-color: #444;
+}
+footer p {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial,sans-serif ;
+    padding-top: 80px;
+}
+@media (max-width: 768px) {
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .projet img {
+        width: 100%;
+    }
+
+    .offre-1, .offre-2, .offre-3 {
+        width: 90%;
+    }
+
+    body {
+        margin: 10px;
+    }
+}
