@@ -10,10 +10,16 @@ section {
     padding: 0 20px;
 }
 header {
+    margin: 60px auto;
+    padding: 0 20px;
+}
+.titre {
     max-width: 900px;
     margin: 60px auto;
-    padding: 0 20px
+    padding: 0 20px; /* ← évite que le texte touche les bords */
+    text-align: center;
 }
+
 h1 {
     text-align: center;
 }
@@ -145,6 +151,3 @@ footer p {
         margin: 10px;
     }
 }
-
-
-
