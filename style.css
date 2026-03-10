@@ -32,6 +32,7 @@ h3 {
     align-items: center;
     gap: 2rem;
     list-style: none;
+    flex-wrap: wrap;
 }
 .navbar a {
     text-decoration: none;
@@ -142,4 +143,5 @@ footer p {
         margin: 10px;
     }
 }
+
 
