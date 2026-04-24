@@ -1,104 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PorteFolio</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Portfolio de Livio Guarneri, développeur web en Belgique. Création de sites modernes, responsives et professionnels pour petites entreprises.">
-    <title>Mon PorteFolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <ul>
-                <li><a href="#a-propos">À Propos</a></li>
-                <li><a href="#projet">Projets</a></li>
-                <li><a href="#offre">Offres</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-link">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certification">Certifications</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#offers">Offers</a></li>
             </ul>
         </nav>
-        
+        <div class="btn-container">
+            <button class="burger"><i class="fa-solid fa-bars"></i></button>
+    
+            <button class="moon theme-toogle"><i class="fa-solid fa-moon"></i></button>
+            <button class="sun theme-toogle"><i class="fa-solid fa-sun"></i></button>
+        </div>
+
     </header>
-    <section class="titre">
-        <h1>Livio — Création de Sites Web Modernes & Responsives</h1>
-        <p class="description">J’aide les petites entreprises à avoir un site professionnel pour attirer plus de clients.</p>
-        <button class="btn1"><a href="#projet">Mes Projets</a></button>
+
+    <section class="hero">
+        <p class="before-name">Hey there! I'm -</p>
+        <p class="name">Livio Guarneri</p>
+        <p class="after-name">Front-end Developer specializing in building clean and modern websites.</p>
+        <div class="hero-btn">
+            <button class="link-social"><a href="https://github.com/Livio-Guarneri" target="_blank"><i class="fab fa-github"></i>
+                GitHub</a></button>
+            <button class="link-social"><a href="https://www.instagram.com/livio_guarneri/?next=%2F" target="_blank"><i class="fab fa-instagram"></i>
+Instagram</a></button>
+            <button class="link-social"><a href="mailto:livio.guarneri07@gmail.com" target="_blank"><i class="fa fa-envelope"></i>
+livio.guarneri07@gmail.com</a></button>
+        </div>
     </section>
 
-    <section class="a-propos" id="a-propos">
-        <h2>À propos</h2>
-        <p>Je suis Livio, développeur web junior basé en Belgique.
-            Passionné par la création de sites modernes.</p>
-        <p>Je développe des sites vitrines professionnels pour mettre en valeur les activité locales.</p>
-        <p>Mon objectif est de rendre votre activité plus visible et plus crédible en ligne.</p>
-        <h3>Mes compétences</h3>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive design</li>
+            <li><i class="fab fa-html5"></i>
+
+HTML</li>
+            <li><i class="fab fa-css3-alt"></i>
+
+CSS</li>
+            <li><i class="fab fa-js"></i>
+JavaScript</li>
+            <li><i class="fas fa-mobile-alt"></i>
+                Responsive Design</li>
         </ul>
     </section>
 
-    <section class="projet" id="projet">
-        <h2>Mes Projets</h2>
-        <p>Voici quelques projets que j'ai récemment réalisés</p>
-        <div>
-            <h3>Travel Agency</h3>
-            <img src="./travel-agency.png" alt="">
-            <p>Site vitrine moderne pour une agence de voyages.</p>
-            <p>Technos: HTML - CSS</p>
-            <div class="btn-container">
-    
-                <button class="btn2"><a href="https://livio-guarneri.github.io/travel-agency/" target="_blank">Voir le site</a></button>
-                <button class="btn2"><a href="https://github.com/Livio-Guarneri/travel-agency" target="_blank">Voir le code</a></button>
+    <section id="certification" class="certification">
+        <h2>Certifications</h2>
+        <div class="certification-container">
+            <div class="box1-certification">
+                <h3>JavaScript</h3>
+                <img src="./javascript.png" alt="">
+            </div>
+            <div class="box2-certification">
+                <h3>Python</h3>
+                <img src="./python.png" alt="">
             </div>
         </div>
-        <div>
-            <h3>Royal Tennis Padel Club Morlanwelz</h3>
-            <img src="tennis.png" alt="">
-            <p>Site officiel du tennis club de Morlanwelz, avec présentation du club, horaires, tarifs et informations pratiques pour les membres.</p>
-            <p>Technos: HTML - CSS - JavaScript</p>
-            <div class="btn-container">
-    
-                <button class="btn2"><a href="https://rtpcmorlanwelz.com/" target="_blank">Voir le site</a></button>
-                
-            </div>
-        </div>
-
+        
     </section>
 
-    <section class="offre" id="offre">
-        <h2>Mes Offres</h2>
-        <div class="offre-1">
+    <section id="project" class="project" >
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="box1-project">
+                <h3>Royal Tennis Padel Club Morlanwelz</h3>
+                <img src="tennis.png" alt="">
+                <div class="project-text">
+                    <p><i class="fab fa-html5"></i>—<i class="fab fa-css3-alt"></i>—<i class="fab fa-js"></i></p>
+                    <button><a href="https://rtpcmorlanwelz.com/" target="_blank">Show site</a></button>
+                </div>
+            </div>
+            <div class="box2-project">
+                <h3>Travel-Agency</h3>
+                <img src="./travel-agency.png" alt="">
+                <div class="project-text">
+                    <p><i class="fab fa-html5"></i>—<i class="fab fa-css3-alt"></i></p>
+                    <button><a href="https://livio-guarneri.github.io/travel-agency/" target="_blank">Show site</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers" class="offers">
+        <h2>Offers</h2>
+        <div class="offers-container">
+            <div class="offer-1">
 
             <h3>Site vitrine simple</h3>
             <p>1 page + formulaire + responsive</p>
             
-        </div>
-        <div class="offre-2">
+            </div>
+            <div class="offer-2">
 
-            <h3>Site complet</h3>
-            <p>3 à 5 pages + design personnalisé + optimisation Google</p>
+                <h3>Site complet</h3>
+                <p>3 à 5 pages + design personnalisé + optimisation Google</p>
             
-        </div>
-        <div class="offre-3">
+            </div>
+            <div class="offer-3">
 
-            <h3>Site Sur mesure</h3>
-            <p>Fonctionnalités avancées, pages supplémentaires, besoins spécifiques</p>
+                <h3>Site Sur mesure</h3>
+                <p>Fonctionnalités avancées, pages supplémentaires, besoins spécifiques</p>
             
+            </div>
         </div>
+        
     </section>
-    <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <p>Vous avez un projet, une question ou envie de collaborer ?</p>
-        <p>Je suis disponible pour discuter de vos besoins et vous proposer une solution adaptée.</p>
-        <p>📧 Email : <a href="mailto:livio.guarneri07@gmail.com">livio.guarneri07@gmail.com</a></p>
-        <p>💻<a href="https://github.com/Livio-Guarneri" target="_blank">GitHub</a></p>
-        <p>📍 Basé en Belgique</p>
-    </section>
+
     <footer>
         <p>© 2026 Livio Guarneri — Développeur Web</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
