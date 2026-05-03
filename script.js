@@ -5,10 +5,8 @@ const moonBtn = document.querySelector(".moon");
 const burgerBtn = document.querySelector(".burger");
 const navLink = document.querySelector(".nav-link");
 
-toogleThemeBtn.forEach(btn => {
-    btn.addEventListener("click", ()=> {
-        const current = root.getAttribute("data-theme");
-        if (current === "dark") {
+const theme = localStorage.getItem("theme");
+if (theme === "light") {
             root.setAttribute("data-theme", "light");
             sunBtn.style.display = "none"
             moonBtn.style.display = "block";
@@ -16,6 +14,22 @@ toogleThemeBtn.forEach(btn => {
             root.setAttribute("data-theme", "dark");
             sunBtn.style.display = "block";
             moonBtn.style.display = "none";
+        }
+
+
+toogleThemeBtn.forEach(btn => {
+    btn.addEventListener("click", ()=> {
+        const current = root.getAttribute("data-theme");
+        if (current === "dark") {
+            root.setAttribute("data-theme", "light");
+            sunBtn.style.display = "none"
+            moonBtn.style.display = "block";
+            localStorage.setItem("theme", "light");
+        } else {
+            root.setAttribute("data-theme", "dark");
+            sunBtn.style.display = "block";
+            moonBtn.style.display = "none";
+            localStorage.setItem("theme", "dark");
         }
     })
 });
