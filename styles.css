@@ -316,7 +316,7 @@ button:hover {
     border: 1px solid var(--borderBox);
     text-align: center;
     padding: 1rem;
-    width: min(45rem, 100%);
+    width: min(40rem, 100%);
 }
 
 .offers-container {
@@ -325,12 +325,12 @@ button:hover {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    max-width: 100%;
+    max-width: 95%;
 }
 
 @media (max-width: 768px) {
     .offer-1, .offer-2, .offer-3 {
-        width: min(25rem, 100%);
+        width: min(20rem, 100%);
     }
 
     .offers-container {
