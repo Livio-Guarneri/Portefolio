@@ -688,6 +688,7 @@ button:hover {
 footer {
     background-color: var(--footer);
     padding: 3rem 0;
+    width: 100%;
 }
 footer p {
     text-align: center;
