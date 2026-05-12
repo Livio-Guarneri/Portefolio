@@ -325,16 +325,21 @@ button:hover {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    max-width: 95%;
+    max-width: 100%;
 }
 
 @media (max-width: 768px) {
     .offer-1, .offer-2, .offer-3 {
-        width: min(15rem, 100%);
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 1rem;
     }
-
     .offers-container {
-        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        padding: 0 1rem;
     }
 }
 
