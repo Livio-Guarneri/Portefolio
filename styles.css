@@ -125,6 +125,11 @@ header button {
     gap: 5rem;
     flex-wrap: wrap;
 }
+@media (max-width: 600px) {
+    .hero-container {
+        padding: 1.5rem;
+    }
+}
 .name {
     font-size: 3rem;
     color: var(--name);
