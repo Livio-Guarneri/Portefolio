@@ -83,7 +83,7 @@ header button {
         flex-direction: column;
     }
     .btn-container {
-        position: fixed;
+        position: absolute;
         top: 1rem;
         right: 1rem;
         display: flex;
