@@ -38,3 +38,9 @@ toogleThemeBtn.forEach(btn => {
 burgerBtn.addEventListener("click", ()=> {
     navLink.classList.toggle("open");
 })
+
+document.querySelectorAll(".nav-link a").forEach(link => {
+    link.addEventListener("click", ()=> {
+        navLink.classList.remove("open");
+    })
+})
