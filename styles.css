@@ -27,10 +27,10 @@
 }
 
 
-
 body {
     background-color: var(--bg);
     color: var(--text);
+    padding-top: 70px;
 }
 section {
     margin-bottom: 2rem;
@@ -44,6 +44,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    z-index: 1000;
 }
 /*  burger et toogle theme */
 header button {
@@ -94,6 +95,9 @@ header button {
     }
     .burger {
         display: block;
+    }
+    .navbar a {
+        font-size: 1.5rem;
     }
     
 
@@ -207,7 +211,7 @@ button:hover {
     font-size: 2rem;
     background-color: var(--bgBox);
     border-radius: 10px;
-    width: 45rem;
+    width: min(40rem, 100%);
     border: 1px solid var(--borderBox);
     text-align: center;
     padding: 1rem;
@@ -255,7 +259,7 @@ button:hover {
     font-size: 2rem;
     background-color: var(--bgBox);
     border-radius: 10px;
-    width: 45rem;
+    width: min(40rem, 100%);
     border: 1px solid var(--borderBox);
     text-align: center;
     padding: 1rem;
@@ -307,7 +311,7 @@ button:hover {
     border: 1px solid var(--borderBox);
     text-align: center;
     padding: 1rem;
-    width: 45rem;
+    width: min(45rem, 100%);
 }
 
 .offers-container {
@@ -320,7 +324,7 @@ button:hover {
 
 @media (max-width: 768px) {
     .offer-1, .offer-2, .offer-3 {
-        width: 25rem;
+        width: min(25rem, 100%);
     }
 
     .offers-container {
