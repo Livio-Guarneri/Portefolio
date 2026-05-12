@@ -330,7 +330,7 @@ button:hover {
 
 @media (max-width: 768px) {
     .offer-1, .offer-2, .offer-3 {
-        width: min(20rem, 100%);
+        width: min(15rem, 100%);
     }
 
     .offers-container {
