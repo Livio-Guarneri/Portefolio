@@ -290,7 +290,8 @@ button:hover {
     align-items: center;
 }
 .project-text button {
-    height: 2rem;
+    height: auto;
+    padding: 0.8rem 1.5rem;
     border-radius: 10px;
     font-size: 1.5rem;
 }
